@@ -1,0 +1,34 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: index.php
+- url: /validate.php
+  script: validate.php
+- url: /main.css
+  script: main.css
+- url: /main.js
+  script: main.js
+- url: /jquery.js
+  script: jquery.js
+- url: /files/admin
+  script: /files/admin/index.php
+- url: /files/delete.php
+  script: /files/admin/delete.php
+- url: /files/edit.php
+  script: /files/admin/edit.php
+- url: /files/saveEdit.php
+  script: /files/admin/saveEdit.php
+- url: /files/student
+  script: /files/student/index.php
+- url: /files/faculty
+  script: /files/faculty/index.php
+
+env_variables:
+  # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
+  # values obtained when configuring your Cloud SQL instance.
+  PRODUCTION_CLOUD_SQL_INSTANCE: '/cloudsql/adb-1020243:us-central1:adb'
+  PRODUCTION_DB_USERNAME: 'root'
+  PRODUCTION_DB_PASSWORD: 'root1'
+  DEVELOPMENT_DB_NAME: 'adb'
