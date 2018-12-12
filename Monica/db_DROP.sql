@@ -1,0 +1,13 @@
+ALTER TABLE `admin` AUTO_INCREMENT = 1;
+ALTER TABLE `course` AUTO_INCREMENT = 1;
+ALTER TABLE `department` AUTO_INCREMENT = 1;
+ALTER TABLE `faculty` AUTO_INCREMENT = 1;
+ALTER TABLE `student` AUTO_INCREMENT = 1;
+DROP TABLE `admin`;
+DROP TABLE `rating`;
+DROP TABLE `message`;
+DROP TABLE `schedule`;
+DROP TABLE `faculty`;
+DROP TABLE `course`;
+DROP TABLE `student`;
+DROP TABLE `department`;
